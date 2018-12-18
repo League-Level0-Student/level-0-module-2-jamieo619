@@ -2,12 +2,13 @@
 //    Level 0
 
 
-package random;
 
 import java.util.Random;
 
 public class Magic8Ball {
-
+public static void main(String[] args) {
+	
+}
 	// 1. Make a main method that includes all the steps below….
 
 	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
