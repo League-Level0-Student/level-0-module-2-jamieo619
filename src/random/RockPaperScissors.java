@@ -6,6 +6,7 @@ package random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -95,11 +96,15 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         JOptionPane.showMessageDialog(null, "You chose: " + convertSelection(selection) + ".\n"
                     + "The computer chose: " + convertSelection(opponentSelection) + ".\n");
         
+		Random ran = new Random();
+		int r = ran.nextInt(2);
+		
+        
         if(selection == opponentSelection){
             JOptionPane.showMessageDialog(null, "No Winner.  Play again.");
-        }else if((selection == 0 && opponentSelection == 2) || 
-                 (selection == 1 && opponentSelection == 0) ||
-                 (selection == 2 && opponentSelection == 1)){
+        }else if((selection == 0 && opponentSelection == r) || 
+                 (selection == 1 && opponentSelection == r) ||
+                 (selection == 2 && opponentSelection == r)){
             JOptionPane.showMessageDialog(null, "You Win!");
         }else{
             JOptionPane.showMessageDialog(null, "You Lose!");

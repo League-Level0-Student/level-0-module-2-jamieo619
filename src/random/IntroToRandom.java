@@ -8,7 +8,10 @@ import java.util.Random;
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
-		int r = 0;
+		Random ran = new Random();
+		int r = ran.nextInt((88-(-222))+1)+(-222);
+		System.out.println(r);
+		
 		
 		//3. Now make r random. 
 		//   Create an object of the Random class
