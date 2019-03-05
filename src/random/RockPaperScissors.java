@@ -96,8 +96,8 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         JOptionPane.showMessageDialog(null, "You chose: " + convertSelection(selection) + ".\n"
                     + "The computer chose: " + convertSelection(opponentSelection) + ".\n");
         
-		Random ran = new Random();
-		int r = ran.nextInt(2);
+		Random random = new Random();
+		int r = random.nextInt(2);
 		
         
         if(selection == opponentSelection){
